@@ -1,0 +1,12 @@
+como instalar o angular no pc:
+
+1º baixe sua ide (vs code)
+2º baixe o node js na versão LTS, ele ja vem com o NPN e adciona as variaveis de ambiente
+3º agora abra o cmd e digite o comando:  npm i -g @angular?cli         e aguarde... ele vai instalar a angular de forma global
+4º abra a ide e adcione uma extensão para o auto-complet angular language server
+5º criar uma pasta para salvar seu projeto (Curso Angular)
+6º abra o terminal pela sua ide na pasta que vc criou e digite o comando:      ng new nomeDoProjetoAngular
+7º adcione a rotina com yes ou y (angular routing) e selecione o css como comando de format
+8º rode sua aplicação para ver e esta tudo certo, para isso no terminal entre na pasta nomeDoProjetoAngular digitando o seguinte comando na pasta curso angular: cd nomeDoProjetoAngular
+9º digite o comando na pasta nomeDoProjetoAngular: npm start
+10º olhe o servidor que o angular colocou no ar abrindo o seu navegador e na barra de pesquisa use o localhost:4200/ 
