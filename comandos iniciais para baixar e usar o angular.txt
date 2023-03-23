@@ -10,3 +10,14 @@ como instalar o angular no pc:
 8º rode sua aplicação para ver e esta tudo certo, para isso no terminal entre na pasta nomeDoProjetoAngular digitando o seguinte comando na pasta curso angular: cd nomeDoProjetoAngular
 9º digite o comando na pasta nomeDoProjetoAngular: npm start
 10º olhe o servidor que o angular colocou no ar abrindo o seu navegador e na barra de pesquisa use o localhost:4200/ 
+
+no documento temos as "tsconfig..." que são arquivos de configuração do typescript;
+no package.json é onde estão as dependencias do projeto;
+package-lock é onde ele diz quais as dependencias a serem usadas nesse projeto podem ser usadas em outros pc, caso eu faça o dowload em outra maquina atraves do git, entre outros controladores de repositorio;
+no arquivo angular.json especifica o meta dados da minha aplicação, pasta raiz (sourceRoot), prefixo dos componentes(app);
+pastas para o git ignore;
+no arquivo .editorconfig, são configurações onde os editores usaram para rodar a aplicação;
+na pasta src estão os arquivos importantes --- na pasta app estarão as informações que estão na tela da minha aplicação...
+dentro da pasta app: app.component.html é a pagina que aparece para mim inicialmente
+
+o app.component.ts vai me dizer qual arquivos(s) vão ser carregados na pagina principal... esse é o componente principal do angular
