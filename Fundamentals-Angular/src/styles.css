@@ -1,1 +1,18 @@
 /* You can add global styles to this file, and also import other style files */
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+button{
+    padding: 1em;
+    background-color: blueviolet;
+    color: chartreuse;
+    border: medium;
+    font-weight: bold;
+    border-radius: 1px 2px 10px 2px;
+    transition: filter .3s ease-in-out;
+    display: inline-block;
+    margin: 1.5rem 0;
+}
+button:hover{
+    filter: brightness(1.5);
+}

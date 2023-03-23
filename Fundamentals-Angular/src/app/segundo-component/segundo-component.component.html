@@ -3,5 +3,13 @@
 <p> Nome: {{ nome1 | uppercase }}</p><!--interpolação de texto, para passar nome da classe pra tela html-->
 <!--usei o PAIPI   |  para mudar algumas caracteristicas do meu texto para formatar os textos que aparecem na tela... link para mais detalhes https://gasparbarancelli.com/post/transformando-dados-usando-pipes#:~:text=Segue%20uma%20lista%20com%20alguns%20dos%20Pipes%20fornecidos,LowerCasePipe%3A%20Transforma%20todos%20caracteres%20do%20texto%20para%20min%C3%BAsculo.-->
 <!--pipe é usado para formatar nossos textos, alem de dados, eu tbm posso criar meus pipes-->
+<!--as {} serve para ele reconhecer como template-->
 
 <p>Data de Nascimento: {{ dataNascimento | date: "dd/MM/yyyy" }}</p><!--veja a documentação do angular para o melhor entendimento-->
+
+<img src="/assets/foca.jpg" alt="" width="300"><br><br><!--estou apenas inserindo no html-->
+<img [src]="urlImagem" alt="" height="100"><br> <!--aqui é o uso do propertybinding para fazer binding de url com  a propriedade ressurce da tag img; tenho que colocar entre []-->
+
+<!--agora podemos usar o ivenbyid, que é disparar um metodo a partir de um evento, exemplo abaixo-->
+
+<button (click)="mostrarDataNascimento()" type="button">Mostrar Data de nascimento</button><!--estou atrelando o evento no (click) e chamando o metodo mostrardatanascimento, eu crio esse metodo no meu componente.ts-->
