@@ -17,4 +17,4 @@ export class SegundoComponentComponent {
 }
 // o property binding liga as propreidades de tags do html com as proriedaes dos componentes ex.:urlImage
 //Event binding ligar os metodos do meu componente as ações/eventos que acontecem no html
-//two-way binding 
+//two-way binding, a propriedade está linkada com meu template e o template esta atrelada a propridade do objeto, onde consigo modificar a propriedade do template 
