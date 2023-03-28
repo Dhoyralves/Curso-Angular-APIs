@@ -9,15 +9,17 @@ import { NultilicaPorPipe } from './nultilica-por.pipe';
 import { PipeCustomizadoComponent } from './pipe-customizado/pipe-customizado.component';
 import { TwoWayDataBindingComponent } from './two-way-data-binding/two-way-data-binding.component';
 import { FormsModule } from '@angular/forms';
+import { TrabalhandoListasComponent } from './trabalhando-listas/trabalhando-listas.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    PrimeiroComponenteComponent,
+    PrimeiroComponenteComponent, //adicionei do nome da exportclasse na pasta primeiroComponent
     SegundoComponentComponent,
     NultilicaPorPipe,
     PipeCustomizadoComponent,
-    TwoWayDataBindingComponent//adicionei do nome da exportclasse na pasta primeiro Component
+    TwoWayDataBindingComponent,
+    TrabalhandoListasComponent
   ],
   imports: [
     BrowserModule,

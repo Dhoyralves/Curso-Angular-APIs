@@ -1,0 +1,13 @@
+<br><br>
+<h2>
+    <p>trabalhando-listas works!</p> 
+</h2> 
+<ul class="lista-produtos"><!--essa lista ta na pasta que foi criada types/celular-->
+    <li *ngFor="let celular of celulares"> <!--cada celular vai estar dentro dessas li... traduzindo, para cada celular dos meus celulares eu vou fazer alguma coisa, nese caso é mostrar as li-->
+
+        <strong>{{ celular.nome }}</strong>
+        <p>{{ celular.descricao }}</p>
+        <span [ngClass]="celular.esgotado ? 'esgotado' : ''">        {{ celular.esgotado ? "esgotado" : "disponivel"}}</span><!--se for verdade, faz o 1º parentesis (esgotado), se não, faz o segundo(disponivel)-->           <!--faço o uso aqui tambem do property binding(usando a diretiva ngclass), fazendo uma classe caso o produto esteja esgotado ou disponivel-->
+        <br><br><br><br>
+    </li>
+</ul>
