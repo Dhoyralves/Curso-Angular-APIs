@@ -1,0 +1,15 @@
+<br><br><br><br>
+<p>componente-pai works!</p>
+<h2>interação entre componentes pai e filho</h2>
+<h3>O sobrenome do pai: {{ sobrenomeDoPai }}</h3> <!--aqui só estou inicialmente puxando o sobrenome do pai-->
+<h4>esse é  primeiro</h4>
+
+
+<app-componente-filho [sobrenomeDoPai1]="sobrenomeDoPai"></app-componente-filho> <!--aqui eu chamei o componente filho--><!--observe que aqui eu passo a propriedade do pai para o filho-->
+
+
+<!--agora eu vou passar a propriedade do filho pro pai-->
+<h3>O nome completo é: {{ filho.nome11 }} {{ sobrenomeDoPai}}</h3>
+<app-componente-filho [sobrenomeDoPai1]="sobrenomeDoPai" #filho></app-componente-filho> <!--aqui eu usei/criei uma variavel de template #, onde eu tenho acesso a todas propriedades do meu componente, assim eu associo o filho ao nome11--><!--aqui eu n precisava repetir a linha 12 apenas fazer a mudança na linha 5 usando o #filho, se repetiu pq eu chamei todo componente-filho de novo-->
+
+<!--app-componente-filho [sobrenomeDoPai1]="sobrenomeDoPai"  (mostrarNome)#filho></app-componente-filho>--><!--chamando um evento do componente filho pro componente pai-->         <!--evento nesse caso é o mostra nome-->
