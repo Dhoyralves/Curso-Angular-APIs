@@ -4,3 +4,5 @@
 <h3>O sobrenome veio do elemento pai:  {{ sobrenomeDoPai1 }}</h3> <!--observe que aqui eu passo a propriedade do pai para o filho-->
 <label for="nome11">Digite o nome: </label>
 <input type="text" id="nome11" [(ngModel)]="nome11"> <!--aqui eu usei um app-two-way-binding da propriedade nome criada no .ts-->
+<br>
+<button type="button" (click)="mostrarNome.emit(nome11 + ' ' + sobrenomeDoPai1)">Mostrar nome completo (filho-pai) </button><!--esse botão estou criando para chamar um evento de filho-pai --> <!--lembre-se que no mostraNome pai tem um $event que se trata do nome11 e do sobrenomeDoPai-->
