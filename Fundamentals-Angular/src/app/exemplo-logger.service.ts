@@ -7,7 +7,7 @@ export class ExemploLoggerService {
 
   mensagens: string [] = [];
 
-  logar (mensagem: string) {
+  logar (mensagem: string) { //isso é o principal e pode ter so o logar e o console.log
     this.mensagens.push(mensagem);
     alert(mensagem);
     console.log(mensagem);
@@ -18,3 +18,4 @@ export class ExemploLoggerService {
     console.log(this.mensagens);
   }
 }
+//esse arquivo é para o exemplo-serviço3, olhe os templates
