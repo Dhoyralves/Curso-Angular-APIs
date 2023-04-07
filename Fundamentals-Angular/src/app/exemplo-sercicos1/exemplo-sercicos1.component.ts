@@ -7,7 +7,10 @@ import { Component } from '@angular/core';
 })
 export class ExemploSercicos1Component {
   nome44 = "";
-  adcionarNome44 (){
+
+  
+
+  adcionarNome44 (){ //isso é um metodo
     alert(`O nome ${this.nome44} foi adcionado!`);// mensagem na tela
     console.log(`O nome ${this.nome44} foi adcionado!`); //msg no console ctrl+shift+i, na aba console
   }

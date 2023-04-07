@@ -3,7 +3,7 @@ import { Injectable } from '@angular/core';
 @Injectable({
   providedIn: 'root'
 })
-export class ExemploLoggerService {
+export class ExemploLoggerService { //service é uma funcionalidade que posso utilizar em varios componentes
 
   mensagens: string [] = [];
 
