@@ -17,6 +17,7 @@ import { ExemploSercicos1Component } from './exemplo-sercicos1/exemplo-sercicos1
 import { ExemploServicos2Component } from './exemplo-servicos2/exemplo-servicos2.component';
 import { ExemploServicos3Component } from './exemplo-servicos3/exemplo-servicos3.component';
 import { CicloDeVidaComponent } from './ciclo-de-vida/ciclo-de-vida.component';
+import { CicloDeVidaPaiComponent } from './ciclo-de-vida-pai/ciclo-de-vida-pai.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { CicloDeVidaComponent } from './ciclo-de-vida/ciclo-de-vida.component';
     ExemploSercicos1Component,
     ExemploServicos2Component,
     ExemploServicos3Component,
-    CicloDeVidaComponent
+    CicloDeVidaComponent,
+    CicloDeVidaPaiComponent
   ],
   imports: [
     BrowserModule,
