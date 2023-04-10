@@ -1,25 +1,42 @@
-<app-primeirocomponente></app-primeirocomponente> <!--esse nome vem da minha pasta primeiroComponent, de dentro do arquivo primeiroComponent.component.ts no atributo seletor-->
-<app-segundo-component></app-segundo-component>
+<app-card titulo="Primeiro Componente card" cor="#3D4D63">
+    <app-primeirocomponente></app-primeirocomponente> <!--esse nome vem da minha pasta primeiroComponent, de dentro do arquivo primeiroComponent.component.ts no atributo seletor-->
+</app-card>
 
-<app-pipe-customizado></app-pipe-customizado>
+<app-card titulo="Aprofundando conhecimaneto em templates" cor="#B2E7E8">
+    <app-segundo-component></app-segundo-component>
+</app-card>
+
+<app-card titulo="Pipes" cor="#BFB9AA">
+    <app-pipe-customizado></app-pipe-customizado>
+</app-card>
+
+<app-card titulo="Two-way data binding" cor="#F2D096">
+    <app-two-way-data-binding></app-two-way-data-binding>
+</app-card>
+
+<app-card titulo="Renderizando Listas" cor="#ED8975">
+    <app-trabalhando-listas></app-trabalhando-listas>
+</app-card>
+
+<app-card titulo="Componentes personalizados (Input)" cor="#FFE3DC">
+    <app-componente-personalizado nomee="dhoy" sobrenomee="rodrigues alves"></app-componente-personalizado> <!--usando um decorador de componentes no componnte-personalizado-->
+    <app-componente-personalizado nomee="maria" sobrenomee="rodrigues ALVES"></app-componente-personalizado> <!--aqui que eu passo as propriedades diferentes para meus componentes nomee e sobrenomee diferentes-->
+</app-card>
 
 
-<app-two-way-data-binding></app-two-way-data-binding>
-
-<app-trabalhando-listas></app-trabalhando-listas>
-
-<app-componente-personalizado nomee="dhoy" sobrenomee="rodrigues alves"></app-componente-personalizado> <!--usando um decorador de componentes no componnte-personalizado-->
-<app-componente-personalizado nomee="maria" sobrenomee="rodrigues ALVES"></app-componente-personalizado> <!--aqui que eu passo as propriedades diferentes para meus componentes nomee e sobrenomee diferentes-->
-
-
-<app-componente-pai></app-componente-pai>
+<app-card titulo="Compartilhando dados entre componentes" cor="#A2AD91">
+    <app-componente-pai></app-componente-pai>
+</app-card>
 
 
 
-<app-exemplo-sercicos1></app-exemplo-sercicos1>
-<app-exemplo-servicos2></app-exemplo-servicos2>
-<app-exemplo-servicos3></app-exemplo-servicos3>
+<app-card titulo="serviços" cor="#3A2D32">
+    <app-exemplo-sercicos1></app-exemplo-sercicos1>
+    <app-exemplo-servicos2></app-exemplo-servicos2>
+    <app-exemplo-servicos3></app-exemplo-servicos3>   
+</app-card>
 
-
-<app-ciclo-de-vida></app-ciclo-de-vida>
-<app-ciclo-de-vida-pai></app-ciclo-de-vida-pai>
+<app-card titulo="Ciclos de vida">
+    <app-ciclo-de-vida></app-ciclo-de-vida>
+    <app-ciclo-de-vida-pai></app-ciclo-de-vida-pai>
+</app-card>

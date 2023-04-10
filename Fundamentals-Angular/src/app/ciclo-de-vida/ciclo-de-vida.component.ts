@@ -18,13 +18,13 @@ export class CicloDeVidaComponent implements OnInit, OnChanges, OnDestroy{
     this.timer = setInterval(() => this.horario = new Date(), 1000); //o setinterval é uma função que o navegador dispobiliza para executar uma ação de tempos em tempos, o 1000ms = 1s é o timemalt, significa de quanto em quanto tempo a função vai ser executada, a ação é dado em ms
   }
 
-  ngOnChanges(changes: SimpleChanges): void { //o parametro changes tras as mudanças
+  ngOnChanges(changes: SimpleChanges): void { //o parametro changes tras as mudanças, esse evento é disparado antes do oninit
     console.log("O evento Onchanges disparou com as seguintes mudanças" + changes);
     console.log(changes);
       
   }
     
-  ngOnDestroy(): void {
+  ngOnDestroy(): void { //devo fazer essa limpeza do componente quando ele sai da tela, pq ele vai atualizar propriedades que não existem mais ,trazendo um erro... por isso uso o OnDestroy()... sempre quando fizermos uma subscriçãoseja num drimer ou chat, devemos encerrar esse evento usano o OnDestroy()... sempre que o componente sair da tela temos que encerrar esse evento
       clearInterval(this.timer);
   }
 
